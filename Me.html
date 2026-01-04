@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manoj P M — AI/ML • Robotics • Product Design</title>
+
+<style>
+:root{
+ --blue:#2F80ED;
+ --dark:#060B14;
+ --panel:#0E1A30;
+ --glass:rgba(255,255,255,0.05);
+ --border:rgba(255,255,255,0.12);
+ --text:#C9D6FF;
+ --accent:#10B981;
+}
+
+*{box-sizing:border-box;margin:0;padding:0;font-family:Inter,Segoe UI,Poppins;}
+
+body{
+ background:linear-gradient(120deg,#060B14,#141E35);
+ color:white;
+}
+
+/* HERO */
+.hero{
+ min-height:95vh;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ padding:40px;
+ text-align:center;
+}
+
+.hero-box{
+ max-width:1000px;
+ background:var(--glass);
+ border:1px solid var(--border);
+ border-radius:28px;
+ padding:40px;
+ animation:float 8s ease-in-out infinite;
+ backdrop-filter:blur(14px);
+}
+
+@keyframes float{
+ 0%{transform:translateY(0)}
+ 50%{transform:translateY(-12px)}
+ 100%{transform:translateY(0)}
+}
+
+.profile-pic{
+ width:120px;
+ height:120px;
+ border-radius:50%;
+ object-fit:cover;
+ border:2px solid rgba(255,255,255,.3);
+ margin-bottom:16px;
+}
+
+.badge{
+ background:#0D1935;
+ border:1px solid #22345A;
+ padding:10px 16px;
+ border-radius:12px;
+ margin-bottom:14px;
+ color:#AEDDFF;
+}
+
+.btn{
+ display:inline-block;
+ padding:14px 22px;
+ border-radius:12px;
+ background:#2F80ED;
+ color:white;
+ text-decoration:none;
+ margin-top:20px;
+}
+.btn:hover{background:#1B57BD}
+
+.section{
+ width:92%;
+ max-width:1150px;
+ margin:auto;
+ padding:65px 0;
+}
+
+.card-grid{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+ gap:18px;
+}
+
+.card{
+ background:#0E1A30;
+ border-radius:16px;
+ border:1px solid #243A64;
+ padding:22px;
+ transition:.3s;
+}
+.card:hover{transform:translateY(-5px);}
+
+h1{font-size:40px;}
+h2{font-size:30px;margin-bottom:22px;}
+h3{margin-bottom:10px;}
+
+p{color:#C4D6FF;line-height:1.6;}
+
+form input,form textarea{
+ width:100%;
+ padding:12px;
+ border-radius:10px;
+ background:#0E1A30;
+ border:1px solid #324A77;
+ color:white;
+ margin-top:12px;
+}
+
+form button{
+ padding:14px;
+ border:none;
+ border-radius:12px;
+ background:#2F80ED;
+ color:white;
+ margin-top:10px;
+ cursor:pointer;
+}
+
+footer{
+ text-align:center;
+ padding:30px;
+ color:#A9BCEB;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+<div class="hero-box">
+
+<img src="D:\IMP\Manoj.jpg" class="profile-pic">
+
+<div class="badge">
+ 🤖 AI • Machine Learning • Robotics • Product Design
+</div>
+
+<h1>I'm <span style="color:#5FB0FF;">Manoj P M</span></h1>
+
+<p>
+AI/ML Engineer & Robotics Enthusiast passionate about building
+human-centered AI systems — where automation supports people,
+not replaces them.
+</p>
+
+<a href="#experience" class="btn">View My Experience 🚀</a>
+
+</div>
+</section>
+
+
+
+<!-- SKILLS -->
+<section class="section">
+<h2>🧠 AI • ML • Robotics Skills</h2>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>🤖 Artificial Intelligence</h3>
+<p>
+Machine Learning<br>
+Deep Learning<br>
+Supervised & Unsupervised ML<br>
+Neural Networks<br>
+LLMs & Prompt Engineering<br>
+Recommendation Systems<br>
+Model Deployment
+</p>
+</div>
+
+<div class="card">
+<h3>📊 Data Science</h3>
+<p>
+EDA • Feature Engineering<br>
+Statistics • Visualization<br>
+Pandas • NumPy • Sklearn<br>
+Data Pipelines
+</p>
+</div>
+
+<div class="card">
+<h3>🧠 Deep Learning</h3>
+<p>
+PyTorch • TensorFlow<br>
+CNNs • RNNs • Transformers<br>
+Computer Vision • NLP
+</p>
+</div>
+
+<div class="card">
+<h3>🦾 Robotics & CV</h3>
+<p>
+Autonomous Systems<br>
+Object Detection & Tracking<br>
+Sensor Fusion<br>
+Edge AI & Real-Time Systems
+</p>
+</div>
+
+<div class="card">
+<h3>💻 Development</h3>
+<p>
+Python • Flask • FastAPI<br>
+MongoDB • MySQL<br>
+REST APIs • Git • Docker
+</p>
+</div>
+
+<div class="card">
+<h3>🎨 Product & UX</h3>
+<p>
+Figma • AI-native UI<br>
+System Thinking<br>
+Mission-critical Interface Design
+</p>
+</div>
+
+</div>
+</section>
+
+
+
+
+<!-- EXPERIENCE -->
+<section class="section" id="experience">
+  <h2>💼 Experience & Internships</h2>
+
+  <div class="card">
+    <h3>AI Developer Intern</h3>
+    <p><b>Company:</b> Sash Info Services Pvt Ltd</p>
+    <p><b>Duration:</b> Mar 2025 – Jun 2025</p>
+    <p><b>Location:</b> Bengaluru, Karnataka</p>
+    <p>
+      • Built AI-powered analytics tools integrating real-time prediction models.<br>
+      • Developed conversational AI agents using LangChain, OpenAI API & FAISS.<br>
+      • Created automated ML pipelines with MLflow, Docker & FastAPI — reducing deployment time by <b>40%</b>.<br>
+      • Trained CNN & LSTM models on custom datasets to improve inference accuracy.<br>
+      • Collaborated with cross-functional engineering teams to integrate AI inference APIs into production web apps.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Salesforce Developer Intern</h3>
+    <p><b>Company:</b> Salesforce (via Smart Internz)</p>
+    <p><b>Duration:</b> Mar 2023 – Jun 2023</p>
+    <p><b>Mode:</b> Remote</p>
+    <p>
+      • Configured Salesforce org workflows, automation rules & data relationships.<br>
+      • Developed Lightning Web Components (LWC) with REST API integrations.<br>
+      • Built dynamic dashboards for real-time CRM insights.<br>
+      • Earned <b>Salesforce Superbadges</b> including Apex Specialist & Developer Super Set.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Full-Stack Web Development Intern</h3>
+    <p><b>Company:</b> (Academic / Training Internship)</p>
+    <p>
+      • Built responsive web applications using modern JavaScript frameworks.<br>
+      • Worked with REST APIs, authentication & cloud-based deployment workflows.<br>
+      • Improved performance & user experience using scalable architecture practices.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>AI / Machine Learning Intern</h3>
+    <p><b>Company:</b> Brain Train Consultancy</p>
+    <p><b>Role:</b> AI & Data Intern</p>
+    <p>
+      • Worked on AI automation & analytics workflows.<br>
+      • Supported ML model development & problem-solving initiatives.<br>
+      • Contributed to data-driven decision-making projects under senior mentors.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>AI Product Design — Case Study</h3>
+    <p><b>Company:</b> FlytBase (Assignment)</p>
+    <p>
+      Designed an AI-native autonomous drone mission console focused on:<br>
+      • Operator trust<br>
+      • Cognitive-load reduction<br>
+      • Human-in-the-loop AI control<br>
+      • Mission-level decision intelligence<br>
+      Deliverables included UI flows, mission theatre design & edge-case handling.
+    </p>
+  </div>
+
+</section>
+
+
+  <!-- PROJECTS -->
+<section class="section">
+  <h2>🚀 Projects</h2>
+   <div class="card">
+    <h3>VisionGuard — AI Security Detection System</h3>
+    <p>
+      Built an AI-powered surveillance pipeline to detect suspicious activity and anomalies
+      from live camera feeds using computer vision and ML-based event classification.
+    </p>
+    <p>
+      Focused on improving real-time alerting and intelligence-driven monitoring.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Smart Recruitment System — AI/ML Driven Resume Analyzer</h3>
+    <p><b>Tech:</b> Django, TensorFlow, NLP, Bi-LSTM, Word2Vec, TF-IDF</p>
+    <p>
+      Built an AI-powered recruitment platform that analyzes resumes and automatically
+      matches candidates to job roles using deep learning and NLP-based similarity scoring.
+    </p>
+    <p>
+      Designed and deployed ML models using cosine similarity + KNN ranking to evaluate
+      candidate-job relevance, and developed a recruiter dashboard for automated shortlisting.
+    </p>
+    <p><b>Outcome:</b> Achieved 92% classification accuracy on 200+ resumes,
+      reducing manual screening effort by 40%.</p>
+  </div>
+
+  <div class="card">
+    <h3>PromptFlow — Conversational AI Workflow Engine</h3>
+    <p><b>Tech:</b> LangChain, OpenAI API, FastAPI, React, FAISS, ChromaDB</p>
+    <p>
+      Developed a GenAI platform enabling multi-agent conversational workflows for enterprise use-cases.
+      Integrated memory management, prompt optimization, and tool-chaining across AI agents.
+    </p>
+    <p>
+      Implemented backend using FastAPI with React-based UI
+      for dynamic conversation orchestration.
+    </p>
+    <p><b>Outcome:</b> Reduced manual query resolution time by 65%.</p>
+  </div>
+
+  <div class="card">
+    <h3>VisionGuard — Real-Time Anomaly Detector</h3>
+    <p><b>Tech:</b> PyTorch, OpenCV, Flask, Docker</p>
+    <p>
+      Built a real-time anomaly detection system using CNN-based models
+      to monitor safety and detect abnormal equipment behavior.
+    </p>
+    <p>
+      Used transfer learning (ResNet50) to achieve high-precision detection
+      and deployed inference APIs integrated with live camera streams.
+    </p>
+    <p><b>Outcome:</b> Achieved 93% precision in anomaly detection.</p>
+  </div>
+
+  <div class="card">
+    <h3>AI Text Summarizer & Sentiment Analyzer</h3>
+    <p><b>Tech:</b> Transformers (BART, T5), RoBERTa, VADER, Streamlit</p>
+    <p>
+      Developed an NLP web application capable of abstractive text summarization
+      and sentiment classification using state-of-the-art Transformer models.
+    </p>
+    <p>
+      Deployed on Streamlit Cloud to enable interactive user testing and real-time visualization.
+    </p>
+  </div>
+
+</section>
+
+
+</section>
+
+<!-- CERTIFICATIONS -->
+<section class="section">
+  <h2>📜 Certifications</h2>
+
+  <div class="card">
+    <h3>Salesforce Developer Super Set — Superbadges</h3>
+    <p>
+      Awarded for completing advanced Salesforce Developer challenges including:
+    </p>
+    <ul>
+      <li>Apex Specialist</li>
+      <li>Process Automation Specialist</li>
+      <li>Data Integration Specialist</li>
+    </ul>
+    <p>
+      Demonstrates proficiency in Apex, automation, data modeling, and platform development.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Salesforce Administrator & Platform Developer (Trailhead Training)</h3>
+    <p>
+      Completed structured learning paths covering CRM configuration,
+      Lightning development, automation workflows, and application development on Salesforce.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>AI & Machine Learning — Academic & Industry Coursework</h3>
+    <p>
+      Completed hands-on training in machine learning, deep learning,
+      data analytics, and applied AI development.
+    </p>
+  </div>
+
+</section>
+<!-- EXTRACURRICULAR -->
+<section class="section">
+  <h2>🌟 Extracurricular Activities</h2>
+
+  <div class="card">
+    <h3>Author — "Whispers of Shadows"</h3>
+    <p>
+      Wrote and published the book <b>"Whispers of Shadows"</b>,
+      demonstrating creativity, storytelling ability, and strong written communication.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Team Lead — Code Guardian (AI Full-Stack Development Program)</h3>
+    <p>
+      Led a student learning initiative at AIET focused on AI and full-stack development,
+      coordinating collaborative technical learning and peer-driven projects.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Peer Learning & Technical Knowledge Sharing</h3>
+    <p>
+      Conducted knowledge-sharing sessions for students on
+      Machine Learning, NLP, and Generative AI concepts,
+      helping peers strengthen their technical fundamentals.
+    </p>
+  </div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section class="section">
+<h2>📬 Contact Me</h2>
+
+<p>
+Let’s collaborate on AI, Robotics & Product Design opportunities 🚁
+</p>
+
+<form action="https://formspree.io/f/your-form-id" method="POST">
+
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" rows="5" placeholder="Your Message"></textarea>
+
+<button type="submit">Send Message ✉️</button>
+
+</form>
+
+<p style="margin-top:18px;">
+ Email: <b>manojpoojari1511@gmail.com</b><br>
+ Phone: <b>+91-9113653069</b><br>
+ Location: India 🇮🇳
+</p>
+
+</section>
+
+
+
+<footer>
+Designed & Built by Manoj — AI/ML • Robotics • Product Design ✨
+</footer>
+
+</body>
+</html>
